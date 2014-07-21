@@ -226,7 +226,7 @@ input {
 }
 
 /* line 17, style.scss */
-input:checked + p {
+input:checked + .content {
   display: none;
 }
 
@@ -240,7 +240,7 @@ input:checked + p {
 }
 /* line 29, style.scss */
 .wrapper label {
-  background: grey;
+  background: lightgrey;
   display: inline-block;
   width: 100%;
   padding: 10px;

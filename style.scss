@@ -14,7 +14,7 @@ body {
  	display: none;
  }
 
- input:checked + p {
+ input:checked + .content {
  	display: none;
  }
 
@@ -27,7 +27,7 @@ body {
  
 
 	label {
-		background: grey;
+		background: lightgrey;
 		display: inline-block;
 		width: 100%;
 		padding: 10px;
