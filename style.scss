@@ -43,26 +43,36 @@ body {
 		background: lightgrey;
 		display: inline-block;
 		float: left;
-		width: 32.5%;
+		width: 32.8%;
 		padding: 10px;
 		margin: 1px 0.25%;
 	}
 
+	.option2:checked[type="checkbox"] + .content2 {
+		display: block;
+	}
+
+	.option3[type="checkbox"]:checked + .content3 {
+		display: block;
+	}
+
+	input[type="checkbox"]:checked + .content {
+		display: none;
+	}
+
 	.content {
 		clear: both;
-		padding: 10px 0 0 0;
+		padding: 1px 0 0 0;
 	}
 
 	.content2,
 	.content3 {
 		display: none;
 	}
-
-
 }
 
 
- @media all and (max-width: 767px) {
+@media all and (max-width: 767px) {
 
  	.wrapper {
  		width: 96%;
@@ -89,11 +99,10 @@ body {
  			display: block;
  		}
 
-
  		label {
  			display: inline-block;
  			width: 100%;
  		}
  	}
 
- }
+}
